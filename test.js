@@ -30,6 +30,16 @@ assert.equal(4, five.four(), 'A five four should equal 4');
 assert.notEqual(5, five.four(), 'A five four should not equal 5');
 assert.equal(5, five.five(), 'A five five should equal 5');
 assert.notEqual('five', five.five(), 'A five five should not equal five');
+assert.equal(6, five.six(), 'A five six should equal 6');
+assert.notEqual(5, five.six(), 'A five six should not equal 5');
+assert.equal(7, five.seven(), 'A five seven should equal 7');
+assert.notEqual(5, five.seven(), 'A five seven should not equal 5');
+assert.equal(8, five.eight(), 'A five eight should equal 8');
+assert.notEqual(5, five.eight(), 'A five eight should not equal 5');
+assert.equal(9, five.nine(), 'A five nine should equal 9');
+assert.notEqual(5, five.nine(), 'A five nine should not equal 5');
+assert.equal(10, five.ten(), 'A five ten should equal 10');
+assert.notEqual(5, five.ten(), 'A five ten should not equal 5');
 
 var now = new Date().valueOf();
 var slowFive = five.tooSlow();

@@ -30,6 +30,12 @@
   five.three = function() { return five() - ((five() / five()) + (five() / five())); };
   five.four = function() { return (five() + five() + five() + five()) / five(); };
   five.five = function() { return five() + five() + five() - five() - five() };
+  five.six = function() { return (five() + five() - five()) + (five() / five()); };
+  five.seven = function() { return five() + (five() / five()) + (five() / five()); };
+  five.eight = function() { return ((five() + five() + five()) / five()) + five(); };
+  five.nine = function() { return five() + five() - Math.pow(five(), five() - five()); };
+  five.ten = function() { return ((five() * five()) + (five() * five())) / five() };
+
 
   if(typeof module !== 'undefined' && module.exports) {
     module.exports = five;
